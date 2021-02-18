@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Math Quiz</string>
+    <string name="player_name">Player Name</string>
+    <string name="b_button">bbuton</string>
+    <string name="math_quiz">MATH QUIZ</string>
+    <string name="game_instruction">
+        "\n"* Name, Age of player are required to begin math quiz"\n"
+        "\n"* Math quiz contains 5 levels"\n"
+        "\n"* Each level contains a single question of 10 points"\n"
+        "\n"* Correct answer in 05 seconds will get 10 points"\n"
+        "\n"* Correct answer in 10 seconds will get 05 points"\n"
+        "\n"* After 10 seconds, player will move on next level automatically"\n"
+        "\n"* After 5 levels Result page will appear"\n"
+    </string>
+</resources>

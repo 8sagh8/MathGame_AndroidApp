@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:id="@+id/result_final"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:textColor="#000000"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pNameLinearLayout"
+        android:layout_below="@id/result_final"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Player Name: "
+            android:textSize="24sp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/playerNameSaved"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"
+            android:textSize="24sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pAgeLinearLayout"
+        android:layout_below="@id/pNameLinearLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Player Age: "
+            android:textSize="24sp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/playerAgeSaved"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_marginLeft="42dp"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pNationalityLinearLayout"
+        android:layout_below="@id/pAgeLinearLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Score: "
+            android:textSize="24sp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/playerAgeScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_marginLeft="95dp"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

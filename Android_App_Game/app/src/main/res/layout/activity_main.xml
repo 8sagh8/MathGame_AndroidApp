@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/math_quiz"
+        android:id="@+id/mathQuiz"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:textColor="#000000"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameLinearLayout"
+        android:layout_below="@id/mathQuiz"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Name: "
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/playerName"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.7"
+            android:backgroundTint="@android:color/black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageLinearLayout"
+        android:layout_below="@id/nameLinearLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Age:    "
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/playerAge"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.7"
+            android:inputType="text"
+            android:backgroundTint="@android:color/black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nationalityLinearLayout"
+        android:layout_below="@id/ageLinearLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nationality:    "
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/playerNationality"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:layout_weight="0.7"
+            android:backgroundTint="@android:color/black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLinearLayout"
+        android:layout_below="@id/nationalityLinearLayout"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp">
+
+        <Button
+            android:id="@+id/instructionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border_color"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="INSTRUCTION"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/button_border_color"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="START"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_error"
+        android:layout_below="@id/buttonLinearLayout"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>

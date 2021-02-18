@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Level04Activity">
+
+
+    <TextView
+        android:id="@+id/details_taskBar_04"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity = "start"
+        android:paddingLeft="15dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score_layout"
+        android:layout_alignEnd="@id/details_taskBar_04"
+        android:paddingRight="15dp"
+        >
+        <TextView
+            android:id="@+id/score_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: "
+            android:textColor="#000000"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:id="@+id/score_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/details_taskBar_04"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/View03"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="34dp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/question_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="100dp"
+
+        android:layout_marginBottom="15dp"
+        android:text="7 x 7 - 42"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_answer_04"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer: "
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_04"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            android:inputType="text"
+            android:layout_weight="0.7"
+            android:backgroundTint="@android:color/black"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit_04"
+        android:layout_below="@id/layout_answer_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border_color"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="SUBMIT"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/timer_04"
+        android:layout_below="@id/submit_04"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="50dp"
+        android:text="Timer"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id = "@+id/timing_04"
+        android:layout_below="@id/timer_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border_color"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="00"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_error"
+        android:layout_below="@id/timing_04"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
